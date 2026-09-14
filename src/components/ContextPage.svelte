@@ -4,8 +4,8 @@
             <div class="context-head">
                 <h1 class="context-name">{ name }</h1>
                 <button class="context-close" on:click={() => close()}>
-                    <div class="context-close__icon"><Close></Close></div>
-                    <div class="context-close__label">Close</div>
+                    <div class="context-close__icon"><Fechar></Fechar></div>
+                    <div class="context-close__label">Fechar</div>
                 </button>
             </div>
             <div class="context-content">
@@ -17,7 +17,7 @@
 
 <script>
 	import { createEventDispatcher } from 'svelte'
-    import Close from '/src/components/icons/context/close'
+    import Fechar from '/src/components/icons/context/close'
 
 	const dispatch = createEventDispatcher();
 

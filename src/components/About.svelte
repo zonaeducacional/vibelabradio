@@ -1,18 +1,18 @@
-<button class="header__sideBtn" on:click={() => openPage()}>About</button>
+<button class="header__sideBtn" on:click={() => openPage()}>Sobre</button>
 <Portal target="{document.body}">
-    <ContextPage name="About" open={open} on:close={closePage}>
-        <p class="txtbig">This radio is powered by the publications made on the social media platform <a href="https://joinmastodon.org/" target="_blank">Mastodon</a>. The goal behind it is to make a place to discover music outside your usual bubble. Hope you enjoy it!</p>
+    <ContextPage name="Sobre" open={open} on:close={closePage}>
+        <p class="txtbig">Esta rádio é alimentada pelas publicações feitas na rede social <a href="https://joinmastodon.org/" target="_blank">Mastodon</a>. O objetivo principal é criar um espaço para descobrir músicas fora da sua bolha habitual. Espero que você aproveite!</p>
         <hr>
-        <h2>Where does the music come from?</h2>
-        <p>The app gets all the public publications that contain a media link and a music hashtag (you can configure it in the Settings). We support only Youtube links for now, but more platforms are planned in the future.<br>
-        We don’t own the musics rights so the songs are played on the original platform player.</p>
-        <h2>How can I get my song be played on the radio?</h2>
-        <p>You have to make a public toot containing one of the hashtags configured on the app and a Youtube link.</p>
-        <h2>Can I use the radio on my phone?</h2>
-        <p>It’s a webapp so it should be working, however since the Youtube Player allows us to play a song only when you’re on the web and stops when the screen turns off or when you’re on another app, it’s kind of unusable.<br>
-        It’s kind of shitty but as long Youtube has this behavior we don’t see a way to make a great experience for the radio on mobile devices.</p>
-        <h2>How can I contact you? I’ve detected a problem, have an idea, or a kind message.</h2>
-        If you’re a developer you can create an issue on the <a href="https://github.com/EldritchCafe/radio" target="_blank">Github repo</a>. For anything else you can contact the maintainers <a href="https://mastodon.guerilla.studio/@milia" target="_blank">Milia</a> & <a href="https://mastodon.guerilla.studio/@tixie" target="_blank">Tixie</a> on their Mastodon accounts.
+        <h2>De onde vêm as músicas?</h2>
+        <p>O aplicativo busca todas as publicações públicas que contêm um link de mídia e uma hashtag de música (você pode configurar isso nas Configurações). Suportamos apenas links do Youtube por enquanto, mas outras plataformas estão planejadas.<br>
+        Não possuímos os direitos das músicas, então elas são reproduzidas no player da plataforma original.</p>
+        <h2>Como faço para que minha música toque na rádio?</h2>
+        <p>Basta fazer uma publicação pública no Mastodon contendo uma das hashtags configuradas no app e um link do Youtube.</p>
+        <h2>Posso usar a rádio no celular?</h2>
+        <p>Como é um webapp, ele deve funcionar. No entanto, o Player do Youtube permite a reprodução apenas quando você está na página, parando se a tela desligar ou se você mudar de aplicativo. Isso prejudica um pouco a experiência mobile.<br>
+        Infelizmente, enquanto o Youtube mantiver esse comportamento, a experiência em dispositivos móveis terá limitações.</p>
+        <h2>Como posso entrar em contato para reportar um problema, dar uma ideia ou mandar uma mensagem?</h2>
+        Se você é desenvolvedor, pode criar uma "issue" no <a href="https://github.com/EldritchCafe/radio" target="_blank">repositório do Github</a>. Para qualquer outra coisa, você pode entrar em contato com o mantenedor <a href="https://mastodon.social/@sergiosalinas" target="_blank">Sérgio Salinas (@sergiosalinas@mastodon.social)</a> no Mastodon.
     </ContextPage>
 </Portal>
 

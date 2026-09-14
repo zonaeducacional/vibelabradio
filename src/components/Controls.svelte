@@ -9,8 +9,8 @@
             class:disabled={!$canPrevious}
             disabled={!$canPrevious}
             on:click={() => selectPrevious()}
-            aria-label="Prev"
-            title="Previous song"
+            aria-label="Anterior"
+            title="Música anterior"
         ><Prev></Prev></button>
         <PlayPause on:click={() => $paused = !$paused}></PlayPause>
         <button
@@ -18,8 +18,8 @@
             class:disabled={!$canNext}
             disabled={!$canNext}
             on:click={() => selectNext()}
-            aria-label="Next"
-            title="Next Song"
+            aria-label="Próxima"
+            title="Próxima música"
         ><Next></Next></button>
     </div>
 
@@ -30,7 +30,7 @@
                 class="controls__menuBtn"
                 disabled={!$current}
                 class:disabled={!$current}
-                aria-label="track menu"
+                aria-label="menu da música"
             ><IconMenu></IconMenu>{!!$current}</button>
             <div slot="content" class="contextMenu__list">
                 {#if $current}

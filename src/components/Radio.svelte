@@ -1,5 +1,5 @@
 <svelte:head>
-    <title>{`${ $current ? `${$current.media.title} ∴ ` : ''}Eldritch Radio`}</title>
+    <title>{`${ $current ? `${$current.media.title} ∴ ` : ''}VibeLab`}</title>
 </svelte:head>
 
 <div class="app container">
@@ -34,9 +34,9 @@
 
     const cache = new DeepSet()
 
-    const domain = writableStorage(localStorage, 'domain', process.env.INSTANCE)
+    const domain = writable('mastodon.social')
 
-    const hashtags = writableStorage(localStorage, 'hashtags', [
+    const hashtags = writable([
         'np',
         'nowplaying',
         'tootradio',

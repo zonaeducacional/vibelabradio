@@ -36,8 +36,8 @@
                 >
                 <button
                     class="playerCover__expand"
-                    aria-label="Expand player"
-                    title="Expand player"
+                    aria-label="Expandir player"
+                    title="Expandir player"
                     on:click={() => switchBigPlayer()}
                 ><IconExpand></IconExpand></button>
             {/if}
@@ -56,7 +56,7 @@
         <div class="playerTrack__infos">
             <div class="playerTrack__name" class:placeholder={!$current}>{#if $current}{$current.media.title}{/if}</div>
             <div class="playerTrack__referer" class:placeholder={!$current}>
-                {#if $current}shared by <span class="playerTrack__username">{$current.referer.username}</span>{/if}
+                {#if $current}compartilhado por <span class="playerTrack__username">{$current.referer.username}</span>{/if}
             </div>
         </div>
         <!--<button class="playerTrack__fav" class:hidden={!$current} aria-label="Fav"><IconHeart></IconHeart></button>-->
@@ -87,7 +87,7 @@
                     on:input={event => seek(event.target.value, true)}
                     on:change={event => seek(event.target.value, true)}
                 ></Progress>
-                <div class="playerSticky__referer">shared by <span class="playerTrack__username">{$current.referer.username}</div>
+                <div class="playerSticky__referer">compartilhado por <span class="playerTrack__username">{$current.referer.username}</div>
             </div>
         {/if}
     </div>

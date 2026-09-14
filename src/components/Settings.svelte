@@ -1,12 +1,12 @@
-<button class="header__sideBtn" on:click={() => openPage()}>Settings</button>
+<button class="header__sideBtn" on:click={() => openPage()}>Configurações</button>
 <Portal target="{document.body}">
-    <ContextPage name="Settings" open={open} on:close={closePage}>
+    <ContextPage name="Configurações" open={open} on:close={closePage}>
 
     <form class="settings" on:submit={handleSubmit}>
         <div class="settings-line">
             <div class="settings-side">
-                <div class="settings-side__title">Instance</div>
-                <div class="settings-side__subtitle">The mastodon instance from the toots are fetched</div>
+                <div class="settings-side__title">Instância</div>
+                <div class="settings-side__subtitle">A instância do Mastodon de onde as publicações são buscadas</div>
             </div>
             <div class="settings-main">
                 <input
@@ -24,7 +24,7 @@
         <div class="settings-line">
             <div class="settings-side">
                 <div class="settings-side__title">Tags</div>
-                <div class="settings-side__subtitle">What hashtags are fetched</div>
+                <div class="settings-side__subtitle">Quais hashtags são buscadas</div>
             </div>
             <div class="settings-main">
                 <TagInput
@@ -35,29 +35,11 @@
                     <div class="notif notif--error">{$hashtagsState.error}</div>
                 {/if}
                 {#if $hashtagsValue.length > 5}
-                    <div class="notif notif--warning">Too many hashtags can impair performances and network consumption.</div>
+                    <div class="notif notif--warning">Muitas hashtags podem prejudicar o desempenho e o consumo de rede.</div>
                 {/if}
             </div>
         </div>
-        <!-- <div class="settings-line">
-            <div class="settings-side">
-                <div class="settings-side__title">Max duration</div>
-                <div class="settings-side__subtitle">Hide tracks above this duration</div>
-            </div>
-            <div class="settings-main">
-                <div class="radiobox radiobox--full">
-                    <input type="radio" id="10min" name="drone" value="10">
-                    <label for="10min">10 min</label>
-                    <input type="radio" id="20min" name="drone" value="20" checked>
-                    <label for="20min">20 min</label>
-                    <input type="radio" id="1hour" name="drone" value="60">
-                    <label for="1hour">1 hour</label>
-                    <input type="radio" id="nolimit" name="drone" value="null">
-                    <label for="nolimit">No limit</label>
-                </div>
-            </div>
-        </div> -->
-        <button class="btn btn--primary w100" type="submit" disabled={!$valid}>Save the changes</button>
+        <button class="btn btn--primary w100" type="submit" disabled={!$valid}>Salvar alterações</button>
     </form>
     </ContextPage>
 </Portal>

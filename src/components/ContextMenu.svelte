@@ -16,7 +16,7 @@
                     <div class="modalShare__controls">
                         <div class="modalShare__bigplayer">
                             <input type="checkbox" id="bigplayer_active" bind:checked={isBigPlayer}>
-                            <label for="bigplayer_active">active big player</label>
+                            <label for="bigplayer_active">ativar player grande</label>
                         </div>
                         <button class="modalShare__copy" on:click={() => copyUrl()}>{ copied ? 'copied' : 'copy' }</button>
                     </div>

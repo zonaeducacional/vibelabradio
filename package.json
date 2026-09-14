@@ -39,6 +39,7 @@
     "autoprefixer": "^10.4.0",
     "parcel": "^2.0.0",
     "postcss": "^8.3.11",
-    "postcss-input-range": "^6.0.0"
+    "postcss-input-range": "^6.0.0",
+    "svgo": "^3.3.5"
   }
 }

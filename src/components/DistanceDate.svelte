@@ -1,8 +1,9 @@
 <script context="module">
     import { formatDistance } from 'date-fns'
+    import { ptBR } from 'date-fns/locale'
     import { readable } from 'svelte/store'
 
-    const format = (date, baseDate) => formatDistance(date, baseDate, { addSuffix: true })
+    const format = (date, baseDate) => formatDistance(date, baseDate, { addSuffix: true, locale: ptBR })
 
     const now = readable(new Date(), set => {
         const interval = setInterval(() => {
@@ -21,4 +22,3 @@
 </script>
 
 <time datetime={iso}>{text}</time>
-

@@ -105,3 +105,141 @@
 @import "8-rwd/_rwd-small";
 @import "8-rwd/_rwd-xsmall";
 @import "8-rwd/_rwd";
+
+// --------------------------------------------------------------
+
+// --------------------------------------------------------------
+
+// --------------------------------------------------------------
+
+// --------------------------------------------------------------
+
+// --------------------------------------------------------------
+// == VibeLab Neumorphism (Light Inverted Palette)
+// --------------------------------------------------------------
+
+body {
+    background: #e2c99f !important;
+    color: #353437 !important;
+}
+
+/* Base Neumorphic Containers */
+.header, .footer, .playerSticky, .playerMini, .track, .playerBig__player {
+    background: #e2c99f !important;
+    border: none !important;
+    border-radius: 16px !important;
+    box-shadow: 8px 8px 16px rgba(163, 155, 126, 0.6), 
+               -8px -8px 16px rgba(255, 255, 255, 0.8) !important;
+    margin-bottom: 24px !important; 
+}
+
+/* Specific Adjustments */
+.header {
+    border-radius: 0 0 16px 16px !important;
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+    margin-bottom: 2rem !important;
+}
+
+.footer {
+    border-radius: 16px 16px 0 0 !important;
+    margin-bottom: 0 !important;
+    padding: 2rem !important;
+}
+
+/* Tracks */
+.track {
+    padding: 1.5rem !important;
+    margin-bottom: 1.5rem !important;
+    transition: box-shadow 0.2s ease, transform 0.2s ease !important;
+}
+
+/* Neumorphic Hover/Active state for interactive elements */
+.track:hover, .track--active {
+    box-shadow: inset 6px 6px 12px rgba(163, 155, 126, 0.6), 
+                inset -6px -6px 12px rgba(255, 255, 255, 0.8) !important;
+    transform: translateY(2px) !important;
+}
+
+/* Fix Skeletons/Placeholders to look like indented grooves */
+.placeholder {
+    background: #e2c99f !important;
+    color: transparent !important;
+    border: none !important;
+    box-shadow: inset 4px 4px 8px rgba(163, 155, 126, 0.6), 
+                inset -4px -4px 8px rgba(255, 255, 255, 0.8) !important;
+    border-radius: 12px !important;
+    animation: none !important; 
+}
+
+/* Push viewer and queue inward */
+.viewer, .queue {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+}
+
+/* Sticky player */
+.playerSticky {
+    max-width: 48rem !important;
+    margin: 1rem auto !important;
+    left: 0 !important;
+    right: 0 !important;
+    top: 0 !important;
+    padding: 1.5rem 2rem !important;
+}
+.playerSticky:not(.hidden) {
+    transform: none !important;
+}
+.playerSticky.hidden {
+    top: -100px !important;
+    transform: none !important;
+}
+
+/* Buttons */
+.controls__playpause, .controls__prevnext {
+    background: #e2c99f !important;
+    border-radius: 50% !important; 
+    box-shadow: 4px 4px 8px rgba(163, 155, 126, 0.6), 
+               -4px -4px 8px rgba(255, 255, 255, 0.8) !important;
+    border: none !important;
+    transition: all 0.2s ease !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #353437 !important;
+}
+
+.controls__playpause {
+    width: 48px !important;
+    height: 48px !important;
+}
+
+.controls__prevnext {
+    width: 36px !important;
+    height: 36px !important;
+}
+
+.controls__playpause:active, .controls__prevnext:active {
+    box-shadow: inset 4px 4px 8px rgba(163, 155, 126, 0.6), 
+                inset -4px -4px 8px rgba(255, 255, 255, 0.8) !important;
+}
+
+/* Text and Links Colors */
+.queue__sectionTitle {
+  color: #53576b !important;
+  font-weight: 800 !important;
+  text-shadow: 1px 1px 2px rgba(255,255,255,0.7), -1px -1px 2px rgba(163,155,126,0.3);
+}
+
+svg {
+    fill: currentColor;
+    color: #353437;
+}
+
+.playerTrack__username, .track__subtitle {
+    color: #53576b !important;
+}
+.track__title, .playerSticky__track {
+    color: #353437 !important;
+}
+
