@@ -1,6 +1,6 @@
 <header class="header" style="justify-content: center;">
     <h1 class="header__title">
-        <a class="header__titleLink" href="/" style="text-decoration: none;">
+        <a class="header__titleLink" href="/vibelabradio/" style="text-decoration: none;">
             <div style="display: flex; align-items: center; justify-content: center; gap: 12px;">
                 <!-- Equalizer / Radio Icon -->
                 <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="url(#logo-grad)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="filter: drop-shadow(0 0 6px rgba(53, 52, 55, 0.2));">

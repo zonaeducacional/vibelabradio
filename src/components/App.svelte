@@ -1,4 +1,4 @@
-<Router>
+<Router basepath="/vibelabradio">
     {#each routes as { duplex, component }}
         <Route path={duplex.spec} component={component} />
     {/each}
